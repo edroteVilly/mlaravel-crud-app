@@ -24,4 +24,7 @@ RUN chown -R www-data:www-data /var/www && chmod -R 755 /var/www
 EXPOSE 8000
 
 # Start Laravel server
-CMD php artisan storage:link && php artisan serve --host=0.0.0.0 --port=8000
+CMD php artisan config:clear && \
+    php artisan cache:clear && \
+    php artisan config:cache && \
+    php artisan serve --host=0.0.0.0 --port=8000
