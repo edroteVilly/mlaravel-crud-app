@@ -8,7 +8,7 @@
 </head>
 <body style="background-color: #f3e8ff;">
     <div class="container py-5">
-        <h1 class="text-center mb-4">📦 Product Inventory</h1>
+        <h1 class="text-center mb-4">📦 Food Products Inventory</h1>
 
         <div class="text-end mb-4">
             <a href="{{ route('products.create') }}" class="btn btn-outline-primary">+ Add Product</a>
